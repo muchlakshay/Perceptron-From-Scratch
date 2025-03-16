@@ -2,7 +2,6 @@
 
 #include <vector>
 #include <string>
-#include <sstream>
 
 struct Data {
     std::vector<std::string> header;
