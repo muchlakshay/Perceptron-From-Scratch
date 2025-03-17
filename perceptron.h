@@ -38,7 +38,7 @@ private:
     }
     
     //dot product of two vectors 
-    template <typename T, typename U> //ive used templates because its my code ;) (i wanted it to use in some other context)
+    template <typename T, typename U> //I've used templates because it's my code ;) (i wanted to use it in some other context)
     double dot(const std::vector<T>& vec1, const std::vector<U>& vec2){
         double dot {};
         for (int i {0}; i<vec1.size(); ++i){
@@ -98,11 +98,11 @@ public:
         row_size=feature_size;
         int data_size {static_cast<int>(features.size())};
     
-        features = normalize(features); //noramlize weights before training (this perceptron goes crazy if i dont)
+        features = normalize(features); //normalize weights before training (this perceptron goes crazy if i don't)
     
         initializeWeights(feature_size); //weights init
     
-        for (int e {1}; e<=epochs; ++e){ //runs through whole code every epoch
+        for (int e {1}; e<=epochs; ++e){ //runs through whole data every epoch
             
             //correct predictions (if classification)
             int correct {};
