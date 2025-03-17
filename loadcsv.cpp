@@ -60,7 +60,7 @@ Data load_csv(const std::string& filename, const std::string& target_column, dou
     }
 
     //Split data according to the ratio given as argument into X_tain, X_test, Y_train and Y_test
-    //ik its inefficient but listen bro i am a beginner
+    //ik its inefficient
     int training_size {static_cast<int>(data.X_train.size()*training_ratio)};
     for (int i = data.X_train.size(); i>training_size; --i){
         data.X_test.push_back(data.X_train[i-1]);
